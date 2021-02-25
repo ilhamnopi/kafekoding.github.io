@@ -1,454 +1,446 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Poppins&display=swap');
-*{
- margin: 0px;
- padding: 0px;
- font-family: 'Open Sans', sans-serif;
- color: #BDBDBD;
- box-sizing: border-box;
- /* border: 1px solid black; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  color: #bdbdbd;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 
 /*================== START: Butto scroll top=================== */
 a#backToTop {
- width:40px;
- margin: 20px;
- height:40px;
- opacity:0.5;
- position:fixed;
- bottom:5px;
- right:0;
- display:none;
- text-indent:-10000px;
- outline:none !important;
- background-image: url('../images/logo.png');
- background-repeat: no-repeat;
- background-size: cover;
- z-index: 999;
+  width: 40px;
+  margin: 20px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  display: none;
+  text-indent: -10000px;
+  outline: none !important;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
 }
-a#backToTop::after{
- content: 'Click to Top';
- color: black;
- font-size: 12px;
- position: fixed;
- bottom:0;
- width: 100px;
- right: -30px;
- color: cornflowerblue;
+a#backToTop::after {
+  content: "Click to Top";
+  color: black;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100px;
+  right: -30px;
+  color: cornflowerblue;
 }
 
 /*================== END: Butto scroll top=================== */
 
-
 /* ======================================START:NAVBAR:CSS====================================== */
-ul.navbar-nav li.nav-item.active a.nav-link{
- color: #02366E;
- font-weight: 700;
+ul.navbar-nav li.nav-item.active a.nav-link {
+  color: #02366e;
+  font-weight: 700;
 }
-ul.navbar-nav li.nav-item a.nav-link{
-color: #02366E;
-font-weight: 400;
-transition: 0.3s;
+ul.navbar-nav li.nav-item a.nav-link {
+  color: #02366e;
+  font-weight: 400;
+  transition: 0.3s;
 }
-ul.navbar-nav li.nav-item a.nav-link:hover{
- color: #F4C247;
- }
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #f4c247;
+}
 
-form a.btn-login{
- background-color: #02366E;
- color: white !important;
- border-radius: 20px;
- border: 1px solid transparent;
- transition: 0.3s;
+form a.btn-login {
+  background-color: #02366e;
+  color: white !important;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
-form a.btn-login:hover{
- color: #02366E !important;
- border: 1px solid #02366E;
- background-color: transparent;
- box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
+form a.btn-login:hover {
+  color: #02366e !important;
+  border: 1px solid #02366e;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
 }
-button.navbar-toggler{
- background-color:#F4C247 ;
+button.navbar-toggler {
+  background-color: #f4c247;
 }
-button.navbar-toggler:focus{
- border: none;
- outline: none;
- box-shadow:0px 0px 5px #F4C247;
+button.navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #f4c247;
 }
 
 /* END:NAVBAR CSS */
 
-
-
 /* ==================================START: HEADER CSS================================== */
-header.header-homePage{
- position: relative;
+header.header-homePage {
+  position: relative;
 }
-header.header-homePage::before{
- content: url(../images/left-top-header-background.svg);
+header.header-homePage::before {
+  content: url(../images/left-top-header-background.svg);
 
- position: absolute;
- background-size: 10px;
- top: 0px;
- left: 0px;
- z-index: -9999;
+  position: absolute;
+  background-size: 10px;
+  top: 0px;
+  left: 0px;
+  z-index: -9999;
+}
+header.header-homePage::after {
+  content: url(../images/right-bottom-header-background.svg);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-size: auto;
+  z-index: -9999;
+}
+h2.text-header,
+h1.text-header {
+  font-family: "1.tff";
+  font-size: 70px;
+  color: #02366e;
+}
+h1.text-header {
+  margin-bottom: 20px;
+}
+p.paragraph-header {
+  width: 415px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
 
-}
-header.header-homePage::after{
- content: url(../images/right-bottom-header-background.svg);
- position: absolute;
- bottom: 0px;
- right: 0px;
- background-size: auto;
- z-index: -9999;
-}
-h2.text-header,h1.text-header{
- font-family: "1.tff";
- font-size: 70px;
- color: #02366E;
-}
-h1.text-header{
- margin-bottom: 20px;
-}
-p.paragraph-header{
- width: 415px;
- font-size: 20px;
- font-weight: 300;
- margin-bottom: 30px;
-}
+a.btn.btn-primary.btn-cta {
+  background-color: #f4c247;
+  border: 1px solid hsl(43, 89%, 62%);
+  border-radius: 20px;
 
-a.btn.btn-primary.btn-cta{
-background-color: #F4C247;
-border: 1px solid hsl(43, 89%, 62%);
-border-radius: 20px;
-
-font-weight: 600;
-transition: 0.3s;
+  font-weight: 600;
+  transition: 0.3s;
 }
-a.btn.btn-primary.btn-cta:hover{
- border: 1px solid #F4C247;
- background-color: transparent;
- color:#F4C247;
- font-weight: 600;
- box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
+a.btn.btn-primary.btn-cta:hover {
+  border: 1px solid #f4c247;
+  background-color: transparent;
+  color: #f4c247;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
 }
-a.icons-instagram img{
- width: 60px;
- transition: 0.3s;
- margin-bottom: 99px;
+a.icons-instagram img {
+  width: 60px;
+  transition: 0.3s;
+  margin-bottom: 99px;
 }
-a.icons-instagram img:hover{
- width: 60px;
- transform: rotate(45deg);
- filter: drop-shadow(0px 0px 5px rgba(13, 118, 255, 0.5));
+a.icons-instagram img:hover {
+  width: 60px;
+  transform: rotate(45deg);
+  filter: drop-shadow(0px 0px 5px rgba(13, 118, 255, 0.5));
 }
-a.icons-instagram img:not(:nth-child(3)){
- margin-right: 30px;
+a.icons-instagram img:not(:nth-child(3)) {
+  margin-right: 30px;
 }
 
 /* END: HEADER CSS */
 
 /* ============================START: ABOUT CSS============================ */
-section.section-about{
- margin-bottom: 50px;
- position: relative;
+section.section-about {
+  margin-bottom: 50px;
+  position: relative;
 }
-section.section-about::before{
-content: '';
- position: absolute;
- background-color: #F5F9FF;
- opacity: 0.8;
- inset: 0;
+section.section-about::before {
+  content: "";
+  position: absolute;
+  background-color: #f5f9ff;
+  opacity: 0.8;
+  inset: 0;
 }
 
-h2.about-heading{
- color: #02366E;
- padding-top: 20px;
+h2.about-heading {
+  color: #02366e;
+  padding-top: 20px;
 }
-p.about-paragraph{
- font-weight: 100;
+p.about-paragraph {
+  font-weight: 100;
 }
-a.btn-about{
- background-color: #02366E;
- color: white;
- border-radius:20px ;
- margin-top: 30px;
- border: 1px solid transparent;
- transition: 0.3s;
+a.btn-about {
+  background-color: #02366e;
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
-a.btn-about:hover{
-border: 1px solid #02366E;
-color: #02366E;
-background-color: transparent;
-box-shadow: 0px 0px 5px rgba(13, 118, 255, 0.5);
+a.btn-about:hover {
+  border: 1px solid #02366e;
+  color: #02366e;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px rgba(13, 118, 255, 0.5);
 }
-a.btn-about:focus{
- background-color: transparent ;
- color: #02366E;
- box-shadow: 0px 0px 5px rgba(13, 118, 255, 0.5);
+a.btn-about:focus {
+  background-color: transparent;
+  color: #02366e;
+  box-shadow: 0px 0px 5px rgba(13, 118, 255, 0.5);
 }
 
 /* END: ABOUT CSS */
 
 /* ===================================START: MATERI CSS===================================*/
-div.card.materi-card{
- border-radius: 15px;
- box-shadow: 0px 0px 1px rgba(255, 199, 13, 0.5);
- 
- height: 380px;
+div.card.materi-card {
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px rgba(255, 199, 13, 0.5);
+
+  height: 380px;
 }
-div.image img{
- width: 20vmin;
+div.image img {
+  width: 20vmin;
 }
-h5.materi-title{
- color: #02366E;
- font-size: 30px;
- margin-bottom: 10px;
+h5.materi-title {
+  color: #02366e;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
-p.materi-sub-title{
- font-size: 18px;
- font-weight: 100;
- margin-bottom: 20px;
+p.materi-sub-title {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px;
 }
-a.btn-detail-kelas{
- background-color: #F4C247;
- color: white;
- border-radius: 15px;
- border: 1px solid transparent;
- transition: 0.3s ;
+a.btn-detail-kelas {
+  background-color: #f4c247;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
-a.btn-detail-kelas:hover{
- border: 1px solid #F4C247;
- background-color: transparent;
- color:#F4C247;
- /* font-weight: 600; */
- box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
+a.btn-detail-kelas:hover {
+  border: 1px solid #f4c247;
+  background-color: transparent;
+  color: #f4c247;
+  /* font-weight: 600; */
+  box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
 }
 
 /* END:MATERI CSS */
 
 /* =========================================START: Mentor CSS ========================================= */
-div.mentor-container{
- width: 90%;
- margin: auto;
+div.mentor-container {
+  width: 90%;
+  margin: auto;
 }
-div.seksi-slider{
- height: 80vh;
- display: flex;
- justify-content: center;
- align-items: center;
+div.seksi-slider {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section.mentor-section{
-
- margin-bottom: 50px;
- position: relative;
+section.mentor-section {
+  margin-bottom: 50px;
+  position: relative;
 }
-section.mentor-section::before{
-content: '';
- position: absolute;
- background-color: #F5F9FF;
- opacity: 0.8;
- inset: 0;
+section.mentor-section::before {
+  content: "";
+  position: absolute;
+  background-color: #f5f9ff;
+  opacity: 0.8;
+  inset: 0;
 }
-div.mentor-container{
- position: relative;
+div.mentor-container {
+  position: relative;
 }
-a{
- text-decoration: none;
+a {
+  text-decoration: none;
 }
-.box{
- width: 300px;
- height: 400px;
- box-shadow: 2px 2px 30px rgba(13, 118, 255, 0.2);
- border-radius: 15px;
- overflow: hidden;
- padding: 40px 20px 20px 20px;
- position: relative;
- margin: 25px;
- background-color: #ffffff;
-}
-
-.box::before{
- content: '';
- position: absolute;
- width: 160px;
- height: 160px;
- background: radial-gradient(circle, rgb(255, 160, 36) 0%, rgb(255, 227, 149) 100%);
- top: -90px;
- left: -90px;
- border-radius: 50%;
-}
-.box::after{
- content: '';
- position: absolute;
- width: 160px;
- height: 160px;
- background: radial-gradient(circle, rgb(255, 160, 36) 0%, rgb(255, 227, 149) 100%);
- bottom: -90px;
- right: -90px;
- border-radius: 50%;
-}
-.slide-img{
- display: flex;
- justify-content: center;
- align-items: center;
- position: relative;
-}
-.background-img{
- position: absolute;
- width: 115px;
- height: 115px;
- border-radius: 50%;
- background: linear-gradient(49deg, rgba(2,54,110,1) 0%, rgba(37,181,221,1) 100%);
- }
-
-.slide-img img{
- width: 105px;
- height: 105px;
- border-radius: 50%;
- object-fit: cover;
- box-sizing: border-box;
- align-items: center;
- z-index: 99999;
-}
-div.name-box h5{
- font-size: 20px;
- font-weight: 600;
- color: #02366E;
-}
-hr.devider-mentor{
- border:1px solid #F4C247;
- background-color: #F4C247;
- border-radius: 20px;
-}
-div.mentor-materi h5{
- color: #02366E;
-}
-a.mentor-icons-sosmed img{
- transition: 0.3s;
-}
-a.mentor-icons-sosmed img:hover{
- transform: rotate(45deg);
+.box {
+  width: 300px;
+  height: 400px;
+  box-shadow: 2px 2px 30px rgba(13, 118, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  margin: 25px;
+  background-color: #ffffff;
 }
 
+.box::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgb(255, 160, 36) 0%, rgb(255, 227, 149) 100%);
+  top: -90px;
+  left: -90px;
+  border-radius: 50%;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgb(255, 160, 36) 0%, rgb(255, 227, 149) 100%);
+  bottom: -90px;
+  right: -90px;
+  border-radius: 50%;
+}
+.slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.background-img {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: linear-gradient(49deg, rgba(2, 54, 110, 1) 0%, rgba(37, 181, 221, 1) 100%);
+}
+
+.slide-img img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 99999;
+}
+div.name-box h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #02366e;
+}
+hr.devider-mentor {
+  border: 1px solid #f4c247;
+  background-color: #f4c247;
+  border-radius: 20px;
+}
+div.mentor-materi h5 {
+  color: #02366e;
+}
+a.mentor-icons-sosmed img {
+  transition: 0.3s;
+}
+a.mentor-icons-sosmed img:hover {
+  transform: rotate(45deg);
+}
 
 /* ===============================END: Mentor css=============================== */
 
 /* ==========================START: BUTTON CTA========================== */
-.btn-bantuan{
- background-color: transparent;
- color: #E1E1E1;
- border: 1px solid #E1E1E1;
- border-radius: 20px;
+.btn-bantuan {
+  background-color: transparent;
+  color: #e1e1e1;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
 }
-.btn-bantuan:hover{
- background-color: transparent ;
- color: #E1E1E1;
- border: 1px solid #E1E1E1;
- box-shadow: 0px 0px 3px rgba(26, 25, 25, 0.5);
+.btn-bantuan:hover {
+  background-color: transparent;
+  color: #e1e1e1;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0px 0px 3px rgba(26, 25, 25, 0.5);
 }
-.btn-bantuan:focus{
- box-shadow: none;
+.btn-bantuan:focus {
+  box-shadow: none;
 }
 
-a.btn-daftar-sekarang{
- background-color: #F4C247;
- color: white;
- border-radius: 20px;
- border: 1px solid transparent;
- transition: 0.3s ;
+a.btn-daftar-sekarang {
+  background-color: #f4c247;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
-a.btn-daftar-sekarang:hover{
- border: 1px solid #F4C247;
- background-color: transparent;
- color:#F4C247;
- /* font-weight: 600; */
- box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
+a.btn-daftar-sekarang:hover {
+  border: 1px solid #f4c247;
+  background-color: transparent;
+  color: #f4c247;
+  /* font-weight: 600; */
+  box-shadow: 0px 0px 5px rgba(89, 78, 43, 0.5);
 }
 
 /* ==========================END: BUTTON CTA========================== */
 
 /* ==========================START: FOOTER========================== */
-.title-logo-footer{
- font-family:"1.tttf";
- font-size: 40px;
- color: #02366E;
+.title-logo-footer {
+  font-family: "1.tttf";
+  font-size: 40px;
+  color: #02366e;
 }
-.footer-paragraph{
- color: #02366E;
+.footer-paragraph {
+  color: #02366e;
 }
-.footer-text{
- color: #02366E;
- margin-bottom: 20px;
+.footer-text {
+  color: #02366e;
+  margin-bottom: 20px;
 }
-.footer-text-end{
- color: #02366E;
+.footer-text-end {
+  color: #02366e;
 }
-ul.list-unstyled a{
- color: #F4C247;
- font-weight: 500;
+ul.list-unstyled a {
+  color: #f4c247;
+  font-weight: 500;
 }
-ul.list-unstyled a.alamat,ul.list-unstyled a.kelas-tersedia{
- color: #4D78A6;
- font-weight: 100;
+ul.list-unstyled a.alamat,
+ul.list-unstyled a.kelas-tersedia {
+  color: #4d78a6;
+  font-weight: 100;
 }
-.paragraph-blog{
- color: #4D78A6;
+.paragraph-blog {
+  color: #4d78a6;
 }
-
 
 /* ==========================END: FOOTER========================== */
 
-
-
-
-
 /* ---------------------------START:TENTANG KAMI CSS--------------------------- */
-div.container-breadcrumb, ol.breadcrumb{
- background-color: #F8FBFF;
+div.container-breadcrumb,
+ol.breadcrumb {
+  background-color: #f8fbff;
 }
-li.breadcrumb-item a.breadcrumb-link{
- color: #02366E;
+li.breadcrumb-item a.breadcrumb-link {
+  color: #02366e;
 }
-li.breadcrumb-item.active{
- font-weight: 700;
- color: #02366E;
+li.breadcrumb-item.active {
+  font-weight: 700;
+  color: #02366e;
 }
 
 /* START: CAROUSEL */
-section.section-card-carousel-image div.card.carousel-card{
-border-radius: 80px;
-margin-top: 22px;
-box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
+section.section-card-carousel-image div.card.carousel-card {
+  border-radius: 80px;
+  margin-top: 22px;
+  box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
 }
-div.carousel-item img.img-carousel{
- border-radius: 80px;
- height: 58vmin;
- object-fit: cover;
- object-position: center;
- position: relative;
+div.carousel-item img.img-carousel {
+  border-radius: 80px;
+  height: 58vmin;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
 }
-div.carousel-item::after{
- content: '';
- display: block;
- width: 100%;
- height: 58vmin;
- background-color: rgba(0, 0, 0, 0.4);
- z-index: 999;
- border-radius: 80px;
-position: absolute;
-inset: 0;
+div.carousel-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 58vmin;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  border-radius: 80px;
+  position: absolute;
+  inset: 0;
 }
 /* END: CAROUSEL */
 
 /*=============== START:DESKRIPSI ==========*/
-h1.judul-tentang-kami{
- font-family: "1.tttf";
- color: #02366E;
+h1.judul-tentang-kami {
+  font-family: "1.tttf";
+  color: #02366e;
 }
-p.paragraph-tentang-kami{
- color: #BDBDBD;
- font-weight: 300;
- text-align: justify;
+p.paragraph-tentang-kami {
+  color: #bdbdbd;
+  font-weight: 300;
+  text-align: justify;
 }
 
 /*=============== END:DESKRIPSI ==========*/
@@ -456,447 +448,440 @@ p.paragraph-tentang-kami{
 /* ==============================================END: PART 2============================================== */
 
 /* ==============================================START: PART 3============================================== */
-img.logo-kelas-details{
- width: 60vmin;
+img.logo-kelas-details {
+  width: 60vmin;
 }
-div.card.note-card{
- border-radius: 20px;
- box-shadow: 0px 0px 4px rgba(13, 118, 255, 0.5);
+div.card.note-card {
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px rgba(13, 118, 255, 0.5);
 }
 
 /* ==============================================END: PART 3============================================== */
 
 /* ==========================================START: PART 4 LOGIN========================================== */
-section.section-login-page{
- height: 100vh;
+section.section-login-page {
+  height: 100vh;
 }
-div.img-login h1.judul-login{
- font-family: "1.tttf";
- color: #02366E;
- margin-top: 30px;
+div.img-login h1.judul-login {
+  font-family: "1.tttf";
+  color: #02366e;
+  margin-top: 30px;
 }
-div.img-login img.imgl{
- width: 40vmax;
+div.img-login img.imgl {
+  width: 40vmax;
 }
-div.card.login-card{
- border-radius: 53px;
- border: none;
- box-shadow: 0px 0px 4px rgba(13, 118, 255, 0.5);
+div.card.login-card {
+  border-radius: 53px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(13, 118, 255, 0.5);
 }
-img.iamge-form-logo{
- margin: 20px 0px 30px 0px;
+img.iamge-form-logo {
+  margin: 20px 0px 30px 0px;
 }
-label.login-label{
- color: #02366E;
+label.login-label {
+  color: #02366e;
 }
-a.btn-form-login{
-  background-color: #F4C247;
+a.btn-form-login {
+  background-color: #f4c247;
   color: white;
   border-radius: 30px;
-  
- }
- a.btn-form-login:hover{
-  border: 1px solid #F4C247;
+}
+a.btn-form-login:hover {
+  border: 1px solid #f4c247;
   background-color: transparent;
-  color:#F4C247;
+  color: #f4c247;
   /* font-weight: 600; */
   box-shadow: 0px 0px 5px rgba(177, 155, 84, 0.5);
- }
-button.btn-form-login{
- background-color: #F4C247;
- color: white;
- border-radius: 30px;
- 
 }
-button.btn-form-login:hover{
- border: 1px solid #F4C247;
- background-color: transparent;
- color:#F4C247;
- /* font-weight: 600; */
- box-shadow: 0px 0px 5px rgba(177, 155, 84, 0.5);
+button.btn-form-login {
+  background-color: #f4c247;
+  color: white;
+  border-radius: 30px;
 }
-p.class a.lupa-daftar{
- color: #BDBDBD;
- font-weight: 100;
- font-size: 15px;
+button.btn-form-login:hover {
+  border: 1px solid #f4c247;
+  background-color: transparent;
+  color: #f4c247;
+  /* font-weight: 600; */
+  box-shadow: 0px 0px 5px rgba(177, 155, 84, 0.5);
+}
+p.class a.lupa-daftar {
+  color: #bdbdbd;
+  font-weight: 100;
+  font-size: 15px;
 }
 /* ==========================================END: PART 4 LOGIN========================================== */
 
-
-
 /* ===========================START:PART 5 DAFTAR KELAS=========================== */
-label.daftar-kelas-label{
- color: #02366E;
- font-size: 15px;
+label.daftar-kelas-label {
+  color: #02366e;
+  font-size: 15px;
 }
 /* ===========================START:PART 5 DAFTAR KELAS=========================== */
-
 
 /* ============================START: PART 5 REGISTER============================ */
-nav.navbar-register{
- border-radius: 0px 0px 40px 40px;
+nav.navbar-register {
+  border-radius: 0px 0px 40px 40px;
 }
-li.nav-item.K-M-T-T{
-font-size: 20px;
+li.nav-item.K-M-T-T {
+  font-size: 20px;
 }
-div.bakground-blue{
- height: 300px;
- background-color: #02366E;
- margin-top: -80px;
+div.bakground-blue {
+  height: 300px;
+  background-color: #02366e;
+  margin-top: -80px;
 }
-div.register-containers{
- margin-top: -230px;
+div.register-containers {
+  margin-top: -230px;
 }
-div.card.register-card{
- border-radius: 53px;
- box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+div.card.register-card {
+  border-radius: 53px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
-h3.daftar-judul{
- font-family: "1.tttf";
- color: #02366E;
- font-size: 40px;
+h3.daftar-judul {
+  font-family: "1.tttf";
+  color: #02366e;
+  font-size: 40px;
 }
-label.register-label{
- margin: 0px;
- color: #02366E;
+label.register-label {
+  margin: 0px;
+  color: #02366e;
 }
-p.class-text-refister a.sudah-punya-akun{
- color: #BDBDBD;
+p.class-text-refister a.sudah-punya-akun {
+  color: #bdbdbd;
 }
-div.c-breadcrumb,ol.c-breadcrumb, li.c-breadcrumb{
-  background-color: #02366E;
+div.c-breadcrumb,
+ol.c-breadcrumb,
+li.c-breadcrumb {
+  background-color: #02366e;
 }
 /* ============================END: PART 5 REGISTER============================ */
 
 /* ============================START: PART 6 404============================ */
-section.section-404 .container-404{
+section.section-404 .container-404 {
   height: 100vh;
 }
 
-div.image-404 img{
- width: 80vmin;
- position:relative;
- animation: upAndDown, callBack;
- animation-duration:0.6s,1.5s ;
- animation-delay: 0s,0.3s;
- animation-timing-function: ease-out,ease-in-out;
- animation-iteration-count:infinite;
- animation-fill-mode: forwards;
- animation-direction: normal,alternate;
-
+div.image-404 img {
+  width: 80vmin;
+  position: relative;
+  animation: upAndDown, callBack;
+  animation-duration: 0.6s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
 }
 @keyframes upAndDown {
-  0%{transform: translateY(-18px);}
-  50%{transform: translateY(-9px);}
-  100%{transform: translateY(-18px);}
-}
-@keyframes callBack{
-  100%{
+  0% {
     transform: translateY(-18px);
   }
-
+  50% {
+    transform: translateY(-9px);
+  }
+  100% {
+    transform: translateY(-18px);
+  }
 }
-h1.info-404{
+@keyframes callBack {
+  100% {
+    transform: translateY(-18px);
+  }
+}
+h1.info-404 {
   margin-top: -100px;
 }
-a.button-404{
-background-color: #02366E;
-border: 1px solid transparent;
-color: white;
-border-radius: 30px;
-transition: 0.5s;
+a.button-404 {
+  background-color: #02366e;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 30px;
+  transition: 0.5s;
 }
-a.button-404:hover{
+a.button-404:hover {
   background-color: transparent;
-  border: 1px solid #02366E;
-  color: #02366E;
-
+  border: 1px solid #02366e;
+  color: #02366e;
 }
 /* ============================START: PART 6 404============================ */
-
-
-
 
 /* Responsive Breakpoin */
 /* // Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
- /* ============start MOBILE header================= */
- header.header-homePage{
-  margin-bottom: 80px;
- }
- h2.text-header,h1.text-header{
-  font-family: "1.tff";
-  font-size: 50px;
-  color: #02366E;
- }
- p.paragraph-header{
-  width: 400px;
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 40px;
- }
- div.icons-sosmed-header{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  padding: 0px;
- }
- .container{
-  position: relative;
- }
- a.icons-instagram img.header-icon{
-  width: 30px;
-  transition: 0.3s;
-  margin-bottom: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
- }
- a.icons-instagram img.header-icon:hover{
-  width: 30px;
-  transition: 0.3s;
-  margin-bottom: 20px;
- }
+  /* ============start MOBILE header================= */
+  header.header-homePage {
+    margin-bottom: 80px;
+  }
+  h2.text-header,
+  h1.text-header {
+    font-family: "1.tff";
+    font-size: 50px;
+    color: #02366e;
+  }
+  p.paragraph-header {
+    width: 400px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  div.icons-sosmed-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 0px;
+  }
+  .container {
+    position: relative;
+  }
+  a.icons-instagram img.header-icon {
+    width: 30px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  a.icons-instagram img.header-icon:hover {
+    width: 30px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
 
- 
-/* ============END header================= */
+  /* ============END header================= */
 
- /* =====================START MOBILE : ABOUT===================== */
- div.right-about img{
-  width: 90%;
-  margin-bottom: 20px;
- }
- div.left-about{
- order: 2;
- }
- div.right-about{
-  order: 1;
-  justify-content: center;
- }
- /*====================== END MOBILE : ABOUT====================== */
+  /* =====================START MOBILE : ABOUT===================== */
+  div.right-about img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  div.left-about {
+    order: 2;
+  }
+  div.right-about {
+    order: 1;
+    justify-content: center;
+  }
+  /*====================== END MOBILE : ABOUT====================== */
 
- /* =====================START MOBILE : MENTOR ===================== */
- div.icons-sosmed{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
- }
- /* =====================END MOBILE : MENTOR===================== */
+  /* =====================START MOBILE : MENTOR ===================== */
+  div.icons-sosmed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  /* =====================END MOBILE : MENTOR===================== */
 
- /* =====================START MOBILE : FOOTER===================== */
-.title-logo-footer{
- font-family:"1.tttf";
- font-size: 40px;
- color: #02366E;
-}
-.footer-paragraph{
- color: #02366E;
- font-size: 15px;
-}
-.footer-text{
- color: #02366E;
- margin-bottom: 20px;
- 
-}
-.footer-text-end{
- color: #02366E;
-}
-ul.list-unstyled a{
- color: #F4C247;
- font-weight: 500;
-}
-ul.list-unstyled a.alamat,ul.list-unstyled a.kelas-tersedia{
- color: #4D78A6;
- font-weight: 100;
-}
-.paragraph-blog{
- color: #4D78A6;
-}
+  /* =====================START MOBILE : FOOTER===================== */
+  .title-logo-footer {
+    font-family: "1.tttf";
+    font-size: 40px;
+    color: #02366e;
+  }
+  .footer-paragraph {
+    color: #02366e;
+    font-size: 15px;
+  }
+  .footer-text {
+    color: #02366e;
+    margin-bottom: 20px;
+  }
+  .footer-text-end {
+    color: #02366e;
+  }
+  ul.list-unstyled a {
+    color: #f4c247;
+    font-weight: 500;
+  }
+  ul.list-unstyled a.alamat,
+  ul.list-unstyled a.kelas-tersedia {
+    color: #4d78a6;
+    font-weight: 100;
+  }
+  .paragraph-blog {
+    color: #4d78a6;
+  }
 
-.footer-text-end{
- font-size: 12px;
+  .footer-text-end {
+    font-size: 12px;
+  }
+  /* =====================END MOBILE : FOOTER===================== */
+
+  /* * ===============START: PART 2 TENTANG KAMI ====================== */
+  .visi-kanan img.visi-misi-img {
+    width: 300px;
+  }
+
+  /* ===============END: PART 2 TENTANG KAMI ====================== */
+
+  /*================= PART 3 : LOGIN ================= */
+  div.img-login h1.judul-login {
+    font-family: "1.tttf";
+    color: #02366e;
+    margin-top: 160px;
+  }
 }
-/* =====================END MOBILE : FOOTER===================== */
-
- /* * ===============START: PART 2 TENTANG KAMI ====================== */ 
-.visi-kanan img.visi-misi-img{
- width: 300px;
-}
- 
- /* ===============END: PART 2 TENTANG KAMI ====================== */
-
- /*================= PART 3 : LOGIN ================= */
- div.img-login h1.judul-login{
-  font-family: "1.tttf";
-  color: #02366E;
-  margin-top: 160px;
- }
-
- }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
- 
- h2.text-header,h1.text-header{
-  font-family: "1.tff";
-  font-size: 55px;
-  color: #02366E;
- }
- p.paragraph-header{
-  width: 400px;
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 30px;
- }
- div.icons-sosmed-header{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  padding: 0px;
- }
- .container{
-  position: relative;
- }
- a.icons-instagram img.header-icon{
-  width: 40px;
-  transition: 0.3s;
-  margin-bottom: 20px;
-  
- }
- a.icons-instagram img.header-icon:hover{
-  width: 40px;
-  transition: 0.3s;
-  margin-bottom: 20px;
- }
- a.icons-instagram img:not(:nth-child(3)){
-  margin-right: 10px;
- }
+  h2.text-header,
+  h1.text-header {
+    font-family: "1.tff";
+    font-size: 55px;
+    color: #02366e;
+  }
+  p.paragraph-header {
+    width: 400px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  div.icons-sosmed-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 0px;
+  }
+  .container {
+    position: relative;
+  }
+  a.icons-instagram img.header-icon {
+    width: 40px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  a.icons-instagram img.header-icon:hover {
+    width: 40px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  a.icons-instagram img:not(:nth-child(3)) {
+    margin-right: 10px;
+  }
 
+  /*============================ START : ABOUT============================ */
+  div.right-about img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  div.left-about {
+    order: 2;
+  }
+  div.right-about {
+    order: 1;
+    justify-content: center;
+  }
+  /*================================= END : ABOUT================================= */
 
- /*============================ START : ABOUT============================ */
- div.right-about img{
-  width: 90%;
-  margin-bottom: 20px;
- }
- div.left-about{
- order: 2;
- }
- div.right-about{
-  order: 1;
-  justify-content: center;
- }
- /*================================= END : ABOUT================================= */
-
- /*================= PART 3 : LOGIN ================= */
- div.img-login h1.judul-login{
-  font-family: "1.tttf";
-  color: #02366E;
-  margin-top: 160px;
- }
- }
+  /*================= PART 3 : LOGIN ================= */
+  div.img-login h1.judul-login {
+    font-family: "1.tttf";
+    color: #02366e;
+    margin-top: 160px;
+  }
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
- /* =====================START HEADER ====================*/
- h2.text-header,h1.text-header{
-  font-family: "1.tff";
-  font-size: 55px;
-  color: #02366E;
- }
- p.paragraph-header{
-  width: 400px;
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 30px;
- }
- div.icons-sosmed-header{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  padding: 0px;
- }
- .container{
-  position: relative;
- }
- a.icons-instagram img.header-icon{
-  width: 50px;
-  transition: 0.3s;
-  margin-bottom: 20px;
-  
- }
- a.icons-instagram img.header-icon:hover{
-  width: 50px;
-  transition: 0.3s;
-  margin-bottom: 20px;
- }
- a.icons-instagram img.header-icon:not(:nth-child(3)){
-  margin-right: 4px;
- }
- /* =====================END HEADER ====================*/
+  /* =====================START HEADER ====================*/
+  h2.text-header,
+  h1.text-header {
+    font-family: "1.tff";
+    font-size: 55px;
+    color: #02366e;
+  }
+  p.paragraph-header {
+    width: 400px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  div.icons-sosmed-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 0px;
+  }
+  .container {
+    position: relative;
+  }
+  a.icons-instagram img.header-icon {
+    width: 50px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  a.icons-instagram img.header-icon:hover {
+    width: 50px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
+  a.icons-instagram img.header-icon:not(:nth-child(3)) {
+    margin-right: 4px;
+  }
+  /* =====================END HEADER ====================*/
 
- /* ==========================START : ABOUT========================== */
- div.right-about img{
-  width: 90%;
-  margin-bottom: 20px;
- }
- div.left-about{
- order: 2;
- }
- div.right-about{
-  order: 1;
-  justify-content: center;
- }
- /*========================== END : ABOUT========================== */
+  /* ==========================START : ABOUT========================== */
+  div.right-about img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  div.left-about {
+    order: 2;
+  }
+  div.right-about {
+    order: 1;
+    justify-content: center;
+  }
+  /*========================== END : ABOUT========================== */
 
- /* =====================START : MENTOR ===================== */
- div.icons-sosmed{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
- }
- /* =====================END : MENTOR===================== */
+  /* =====================START : MENTOR ===================== */
+  div.icons-sosmed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  /* =====================END : MENTOR===================== */
 
- /* =====================START: PART 4 LOGIN===================== */
- section.section-login-page{
-  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
-   background: linear-gradient(90deg, #ffff 70%, #02366E 30%);
-   width: 100vw;
-   height: 100vh;
- }
-/* =====================END: PART 4 LOGIN===================== */
- }
- 
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
- /* =====================START: PART 4 LOGIN===================== */
-  section.section-login-page{
-   background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
-    background: linear-gradient(90deg, #ffff 70%, #02366E 30%);
+  /* =====================START: PART 4 LOGIN===================== */
+  section.section-login-page {
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
+    background: linear-gradient(90deg, #ffff 70%, #02366e 30%);
     width: 100vw;
     height: 100vh;
   }
- /* =====================END: PART 4 LOGIN===================== */
- }
+  /* =====================END: PART 4 LOGIN===================== */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* =====================START: PART 4 LOGIN===================== */
+  section.section-login-page {
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
+    background: linear-gradient(90deg, #ffff 70%, #02366e 30%);
+    width: 100vw;
+    height: 100vh;
+  }
+  /* =====================END: PART 4 LOGIN===================== */
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
- section.section-login-page{
-  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
-   background: linear-gradient(90deg, #ffff 70%, #02366E 30%);
-   width: 100vw;
-   height: 100vh;
- }
- }
+  section.section-login-page {
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
+    background: linear-gradient(90deg, #ffff 70%, #02366e 30%);
+    width: 100vw;
+    height: 100vh;
+  }
+}
