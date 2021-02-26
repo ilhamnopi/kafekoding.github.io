@@ -12,6 +12,7 @@
  <link rel="stylesheet" href="libraries/style/style.css">
  <link rel="stylesheet" href="libraries/light-slider/css/lightslider.css">
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
  <title>Pendaftaran kelas kafekoding</title>
  <!-- page icon----------- -->
  <link rel="shortcut icon" href="libraries/images/logo.png">
@@ -61,31 +62,50 @@
               <hr>
 
               <form method="POST">
-                
-                  <div class="row">
-                     <!-- ========form-kiri======== -->
-                    <div class="col">
-                      <label class="register-label" for="nama">Nama Lengkap</label>
-                      <input type="text" class="form-control form-control-sm register-form-input mb-2" placeholder="Nama Lengkap" id="nama">
-                      <label  class="register-label" for="tlp">tlp / Wa </label>
-                      <input type="number" class="form-control form-control-sm register-form-input mb-2" placeholder="no hp / Whatsapp" id="tlp">
-                      <label  class="register-label" for="email">E-mail</label>
-                      <input type="email" class="form-control form-control-sm register-form-input mb-2" placeholder="Email" id="email">
-                      <label  class="register-label" for="password">Password</label>
-                      <input type="password" class="form-control form-control-sm register-form-input mb-2" placeholder="password" id="password">
+                 <div class="form-row">
+                   <div class="form-group col-md-6">
+                     <label for="nama">Nama Lengkap</label>
+                     <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                   </div>
 
-                    </div>
-                    <!-- ========form-kanan======== -->
-                    <div class="col">
-                      <label  class="register-label for="namaKampus">Nama Kampus</label>
-                      <input type="text" class="form-control form-control-sm register-form-input mb-2" placeholder="Nama Kampus" id="namaKampus">
-                      <label  class="register-label for="alamatKampus">Alamat Kampus</label>
-                      <input type="text" class="form-control form-control-sm register-form-input mb-2" placeholder="Alamat Kampus" id="alamatKampus">
-                      <label  class="register-label for="alamat">Alamat Pendaftar</label>
-                      <input type="text" class="form-control form-control-sm register-form-input mb-2" placeholder="Alamat Pendaftar" id="alamapendaftar">
+                   <div class="form-group col-md-6">
+                    <label for="tlp">No tlp / Whatsapp</label>
+                    <input type="number" class="form-control" id="tlp" placeholder="no tlp / whatsapp">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@yourmail.com">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="Password">Password</label>
+                    <div class="input-group">
+                      <input class="form-control" type="password" id="password" placeholder="Masukan Password">
+                        <div id="button_show_hide" onclick="showHide();">
+                      </div>
                     </div>
                   </div>
-               
+                  
+
+                  
+                    
+
+
+
+
+                  <div class="form-group col-md-6">
+                    <label for="kampus">Nama Kampus</label>
+                    <input type="text" class="form-control" id="kampus" placeholder="nama kampus">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="pendaftar">Alamat</label>
+                    <input type="text" class="form-control" id="kampus" placeholder="Masukan alamat anda">
+                  </div>
+              
+
+                 </div>
                   <button type="button" class="btn btn-block btn-form-login mt-3" value="Masuk" >Masuk </button>
                   <hr class="devider-register my-4" style="width: 40%; margin: auto;">
                   <p class="class-text-refister text-center mt-2">
@@ -114,6 +134,24 @@
  <!-- bundle js -->
  <script src="libraries/bootstrap/js/bootstrap.bundle.js"></script>
  <!-- script.js ------------->
- <script src="libraries/js/script.js"></script>
+ <!-- <script src="libraries/js/script.js"></script> -->
+
+<script>
+  // Show hide Password
+const password = document.getElementById('password');
+const button_show_hide = document.getElementById('button_show_hide');
+
+function showHide() {
+  if (password.type === 'password') {
+    password.setAttribute('type', 'text');
+    button_show_hide.classList.add('hide');
+  } else {
+    password.setAttribute('type', 'password');
+    button_show_hide.classList.remove('hide');
+  }
+}
+</script>
+
+
 </body>
 </html>

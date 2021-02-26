@@ -555,6 +555,49 @@ ol.c-breadcrumb,
 li.c-breadcrumb {
   background-color: #02366e;
 }
+div.input-group-text,
+div.input-group-text i.fa-eye-slash {
+  text-decoration: none;
+  color: #02366e;
+}
+div.input-group-text {
+  background-color: #f4c247;
+}
+label {
+  color: #02366e;
+}
+.form-control {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+  color: #a1a1a1;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  /* border: none; */
+}
+div#button_show_hide {
+  background: url(../images/eye.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+}
+#button_show_hide.hide {
+  background: url(../images/eye-slash.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /* ============================END: PART 5 REGISTER============================ */
 
 /* ============================START: PART 6 404============================ */
