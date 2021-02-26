@@ -768,6 +768,26 @@ a.button-404:hover {
     color: #02366e;
     margin-top: 160px;
   }
+
+  div#button_show_hide {
+    background: url(../images/eye.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+  }
+  #button_show_hide.hide {
+    background: url(../images/eye-slash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -829,6 +849,25 @@ a.button-404:hover {
     font-family: "1.tttf";
     color: #02366e;
     margin-top: 160px;
+  }
+  div#button_show_hide {
+    background: url(../images/eye.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+  }
+  #button_show_hide.hide {
+    background: url(../images/eye-slash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
