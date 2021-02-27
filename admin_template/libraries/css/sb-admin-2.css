@@ -66,6 +66,12 @@ p.admin-paragraph {
 div.card-data {
   border-radius: 30px;
 }
+img.image-table {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 20px;
+}
 /* end costum style */
 
 html {
