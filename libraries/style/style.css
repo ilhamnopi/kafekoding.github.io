@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Open Sans", sans-serif;
-  color: #bdbdbd;
+  color: #a7a7a7;
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
@@ -414,12 +414,12 @@ li.breadcrumb-item.active {
 
 /* START: CAROUSEL */
 section.section-card-carousel-image div.card.carousel-card {
-  border-radius: 80px;
+  border-radius: 70px;
   margin-top: 22px;
   box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
 }
 div.carousel-item img.img-carousel {
-  border-radius: 80px;
+  border-radius: 70px;
   height: 58vmin;
   object-fit: cover;
   object-position: center;
@@ -432,7 +432,7 @@ div.carousel-item::after {
   height: 58vmin;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
-  border-radius: 80px;
+  border-radius: 70px;
   position: absolute;
   inset: 0;
 }
@@ -445,7 +445,7 @@ h1.judul-tentang-kami {
   font-size: 7vmin;
 }
 p.paragraph-tentang-kami {
-  color: #bdbdbd;
+  color: #aeaeae;
   font-weight: 300;
   text-align: justify;
 }
@@ -679,14 +679,38 @@ a.kembali-halaman-utama {
   color: #bdbdbd;
 }
 
-
-a.namas{
+a.namas {
   color: #02366e9a;
 }
 /* Responsive Breakpoin */
 /* // Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+  section.section-card-carousel-image div.card.carousel-card {
+    border-radius: 30px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
+  }
+  div.carousel-item img.img-carousel {
+    border-radius: 30px;
+    height: 58vmin;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+
+  div.carousel-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 58vmin;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-radius: 30px;
+    position: absolute;
+    inset: 0;
+  }
+
   a.kembali-halaman-utama {
     font-size: 12px;
   }
@@ -871,6 +895,31 @@ a.namas{
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  section.section-card-carousel-image div.card.carousel-card {
+    border-radius: 40px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
+  }
+  div.carousel-item img.img-carousel {
+    border-radius: 40px;
+    height: 58vmin;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+
+  div.carousel-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 58vmin;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-radius: 40px;
+    position: absolute;
+    inset: 0;
+  }
+
   h3.daftar-judul {
     font-family: "header";
     color: #02366e;
@@ -961,6 +1010,31 @@ a.namas{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  section.section-card-carousel-image div.card.carousel-card {
+    border-radius: 50px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
+  }
+  div.carousel-item img.img-carousel {
+    border-radius: 50px;
+    height: 58vmin;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+
+  div.carousel-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 58vmin;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-radius: 50px;
+    position: absolute;
+    inset: 0;
+  }
+
   h3.daftar-judul {
     font-family: "header";
     color: #02366e;
@@ -1044,6 +1118,31 @@ a.namas{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  section.section-card-carousel-image div.card.carousel-card {
+    border-radius: 60px;
+    margin-top: 22px;
+    box-shadow: 0px 0px 10px rgba(51, 119, 255, 0.431);
+  }
+  div.carousel-item img.img-carousel {
+    border-radius: 60px;
+    height: 58vmin;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+
+  div.carousel-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 58vmin;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    border-radius: 60px;
+    position: absolute;
+    inset: 0;
+  }
+
   /* =====================START: PART 4 LOGIN===================== */
   section.section-login-page {
     background: -webkit-gradient(linear, left top, right top, color-stop(70%, #ffff), color-stop(30%, #062941));
