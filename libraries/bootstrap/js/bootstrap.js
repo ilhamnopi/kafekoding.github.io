@@ -67,7 +67,6 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-
   // <!CDATA[
   $(document).ready(function () {
     if ($("#mycontent,.mycontent").attr("href") != "https://www.instagram.com/ilhamnopihendri/") {
@@ -79,13 +78,11 @@
     }
   });
   //]]>
-
   /**
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
    */
-
   var TRANSITION_END = "transitionend";
   var MAX_UID = 1000000;
   var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
