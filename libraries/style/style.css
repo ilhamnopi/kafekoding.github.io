@@ -12,7 +12,7 @@
   src: url(../fonts/1.ttf);
 }
 
-.judul-materi {
+h1.judul-materi {
   color: #02366e;
   font-family: "header";
 }
