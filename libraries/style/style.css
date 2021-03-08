@@ -11,6 +11,12 @@
   font-family: "header";
   src: url(../fonts/1.ttf);
 }
+
+.judul-materi {
+  color: #02366e;
+  font-family: "header";
+}
+
 /*================== START: Butto scroll top=================== */
 a#backToTop {
   width: 40px;
