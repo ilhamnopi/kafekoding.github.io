@@ -67,17 +67,6 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-  // <!CDATA[
-  $(document).ready(function () {
-    if ($("#mycontent,.mycontent").attr("href") != "https://www.instagram.com/ilhamnopihendri/") {
-      window.location.href = "https://www.instagram.com/ilhamnopihendri/";
-    }
-    // check if tag is hidden
-    if ($("#mycontent").css("display") == "none" || $("#mycontent").css("visibility") == "hidden") {
-      window.location.href = "https://www.instagram.com/ilhamnopihendri/";
-    }
-  });
-  //]]>
   /**
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
