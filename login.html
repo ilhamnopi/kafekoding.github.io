@@ -35,16 +35,27 @@
                   <a href="homepage.html"> <img class="iamge-form-logo" width="80" src="libraries/images/logo.png" alt="Kafekoding" /></a>
                 </div>
                 <form method="POST">
+                  <!-- nim -->
                   <div class="form-group">
-                    <label class="login-label" for="email">Email</label>
-                    <input class="form-control mb-3" type="email" name="email" id="email" placeholder="example@yourmail.com" />
+                    <label class="login-label" for="nim">NIM</label>
+                    <input class="form-control mb-3" type="text" name="nim" id="nim" placeholder="Nomor Induk Mahasiswa" />
                   </div>
+                  <!-- Password -->
                   <div class="form-group">
                     <label class="login-label" for="password">Password</label>
                     <div class="input-group">
                       <input class="form-control" type="password" id="password" placeholder="Masukan Password" />
                       <div id="button_show_hide" onclick="showHide();"></div>
                     </div>
+                  </div>
+                  <!-- Daftar Sebagai -->
+                  <div class="form-group">
+                    <label for="m_p" class="login-label"> Login Sebagai </label>
+                    <select name="" id="m_p" class="form-control">
+                      <option>-Pilih salah satu-</option>
+                      <option>Mentor</option>
+                      <option>Peserta</option>
+                    </select>
                   </div>
                   <div class="form-check mb-3">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" />
@@ -65,12 +76,9 @@
       </div>
     </section>
 
-   <!-- Jquery --------->
- <script src="libraries/jquery/jquery-3.5.1.js"></script>
- <script src="libraries/bootstrap/js/bootstrap.js"></script>
- <script src="libraries/js/showPassword.js"></script>
-
-
-
+    <!-- Jquery --------->
+    <script src="libraries/jquery/jquery-3.5.1.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="libraries/js/showPassword.js"></script>
   </body>
 </html>
